@@ -1,0 +1,52 @@
+// about company
+.about{
+  padding: $spacing-large * .5 0 $spacing-basic * 2;
+  background-image: url(../image/sea-horse-bg.jpg);
+  @extend %backgound-image;
+  
+  &-group{
+    margin: 0 auto;
+    width: 85%;  
+  }
+  
+  &-box{
+    @extend %dot-row;
+    color: $light-color;
+    
+    @include mediaquery-tablet-P {
+      position: static;
+    }
+  }
+
+  &-box + &-box{
+    margin-top: $spacing-large * 1.5;
+
+    @include mediaquery-tablet-P {
+      margin-top: $spacing-large * 2;
+    }
+  }
+
+  &-item{
+    padding: 0 $spacing-basic * 3;
+    @extend %dot-row;
+    @include mediaquery-tablet-P {
+      padding: 0 $spacing-large * .5;
+      box-sizing: border-box;
+    }
+
+    p + p{
+      margin-top: $spacing-basic * 2;
+    }
+  }
+
+  &-item + &-item{
+    margin-top: $spacing-large * 1.5;
+  }
+
+  .back-to-top{
+    .link{
+      margin: $spacing-large auto 0;
+      @extend %link-light;
+    }
+  }
+}

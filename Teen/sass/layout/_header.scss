@@ -1,0 +1,18 @@
+// --header, navbar
+header{
+  margin: 0 auto;
+  padding: $spacing-basic * 2 0;
+  background-color: $header-background-color;
+  
+  nav{
+    @extend %nav;
+    
+  }
+  a{
+    @extend %nav-item;
+  }
+
+  a + a{
+    margin-left: $spacing-basic;
+  }
+}

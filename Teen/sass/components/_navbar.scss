@@ -1,0 +1,16 @@
+// navbar
+%nav{
+  font-size: 0;
+  text-align: center;
+}
+
+%nav-item{
+  display: inline-block;
+  padding: $spacing-basic;
+  color: $nav-item-color;
+  font-size: 16px;
+
+  &:hover{
+    color: $light-color;
+  }
+}

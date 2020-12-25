@@ -1,0 +1,17 @@
+//footer copyright
+footer{
+  padding: $spacing-basic * 3 0;
+  background-color: $footer-background-color;
+  text-align: center;
+
+  p{
+    @include mediaquery-mobile-L {
+      display: inline-block;
+    }
+  }
+
+  a{
+    color: $primary-color;
+    cursor: pointer;
+  }
+}

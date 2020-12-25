@@ -1,0 +1,43 @@
+// main-banner
+.banner{
+  padding: $spacing-large 0 $spacing-large * 2;
+  background-image: url(../image/banner.png);
+  @extend %backgound-image;
+  color: $light-color;
+  text-align: center;
+  
+  &-title{
+    margin-bottom: $spacing-large;
+
+    h3{
+      letter-spacing: 10px;
+    }
+  }
+  
+  &-text{
+    @extend %dot-column;
+
+    h4{
+      padding: 0 $spacing-basic;
+      
+      @include mediaquery-mobile-L{
+        margin: 0 auto;
+        width: 400px;
+      }
+    }
+  }
+  
+  @extend %deco-triangle;
+  .collection-title{
+    width: 320px;
+    @include position-absolute(auto, 0);
+    background-color: $primary-color;
+
+    h5{
+      padding: $spacing-basic * 2 0;
+      @extend %deco-title;
+      letter-spacing: 5px;
+    }
+  }
+  
+}

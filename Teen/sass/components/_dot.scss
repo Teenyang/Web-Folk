@@ -1,0 +1,29 @@
+// dot
+%dot{
+  content: '';
+  @include position-absolute(auto, auto);
+  width: $spacing-basic;
+  height: $spacing-basic;
+  background-color: $light-color;
+  border-radius: 50%;
+}
+
+%dot-column{
+  position: relative;
+    
+    &::after{
+      @extend %dot;
+      bottom: $spacing-large * -.5;
+      box-shadow: 0 $spacing-basic * 3, 0 $spacing-basic * 6;
+    }
+}
+
+%dot-row{
+  position: relative;
+
+  &:last-child::after{
+    @extend %dot;
+    top: $spacing-large * -.75;
+    box-shadow: $spacing-basic * 3 0, $spacing-basic * -3 0;
+  }
+}

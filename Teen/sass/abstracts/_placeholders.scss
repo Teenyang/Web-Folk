@@ -1,0 +1,14 @@
+// backgound-image
+%backgound-image{
+  background: {
+    attachment: fixed;
+    position: center top;
+    size: cover;
+  }
+}
+
+// image-fullsize
+%full-image{
+  width: 100%;
+  vertical-align: middle;
+}

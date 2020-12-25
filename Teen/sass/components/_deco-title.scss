@@ -1,0 +1,21 @@
+// deco-title
+%deco-title{
+  background-color: $primary-color;
+  color: $light-color;
+  text-align: center;
+}
+
+// deco-triangle
+%deco-triangle{
+  position: relative;
+  
+  &::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 20px solid $primary-color;
+    border-left: 20px solid $none-color;
+    border-right: 20px solid $none-color;
+    @include position-absolute(auto, -20px);
+  }
+}

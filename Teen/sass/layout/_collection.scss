@@ -1,0 +1,10 @@
+// collection pictures
+.collection{
+  &-item{
+    @extend %hover-picture;
+  }
+
+  img{
+    @extend %full-image;
+  }
+}

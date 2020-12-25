@@ -1,0 +1,46 @@
+// row
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// col-裝置-方向-佔比
+// 手機直向 320px：一列1欄，佔滿12/12
+.col-mobile-P-12{
+  @include mediaquery-mobile-P {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+// 手機橫向 576px：一列2欄，各佔6/12
+.col-mobile-L-6{
+  @include mediaquery-mobile-L {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+// 平板直向 768px：一列2欄，各佔6/12
+.col-tablet-P-6{
+  @include mediaquery-tablet-P {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+// 平板橫向 992px：一列3欄，各佔4/12
+.col-tablet-L-4{
+  @include mediaquery-tablet-L {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+// 桌機 1200px：一列4欄，各佔3/12
+.col-desktop-3{
+  @include mediaquery-desktop {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}

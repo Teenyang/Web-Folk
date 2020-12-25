@@ -1,0 +1,39 @@
+// font-style
+%font-style {
+  font: {
+    family: $primary-font;
+    weight: 300;
+  }
+}
+
+h1{
+  color: $light-color;
+  font: {
+    family: $title-font;
+    size: 60px;
+    weight: 700;
+  }
+  span{
+    font-family: $subtitle-font;
+  }
+}
+
+h2{
+  @extend %font-style;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+h3{
+  @extend %font-style;
+  font-size: 25px;
+}
+
+h4{
+  @extend %font-style;
+  font-size: 20px;
+}
+
+h5{
+  font-size: 20px;
+}

@@ -1,0 +1,47 @@
+// member introduction
+.member{
+  margin: $spacing-large auto $spacing-large * .5;
+  
+  &-text{
+    padding: $spacing-basic;
+    background-color: $primary-color;
+    @extend %deco-triangle;
+  }
+  
+  h5{
+    padding: $spacing-basic;
+    @extend %deco-title;
+    letter-spacing: 2px;
+  }
+  
+  h3{
+    padding: $spacing-large * .5;
+    color: $primary-color;
+    text-align: center;
+  }    
+  
+  &-group{
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  img{
+    @extend %full-image;
+  }
+  
+  &-intro{
+    margin-bottom: $spacing-large * .5;
+    text-align: center; 
+  }
+
+  h2{
+    color: $primary-color;
+  }
+
+  &-contact{
+    .link{
+      margin: 0 auto;
+      @extend %link-dark;
+    }
+  }
+}

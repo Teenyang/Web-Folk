@@ -1,0 +1,19 @@
+// hover collection's picture
+%hover-picture{
+  position: relative;
+  
+  &:hover::before{
+    content: 'WEB folk';
+    @include position-absolute(0, 0);
+    background-color: $hover-picture-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $hover-font-color;
+  
+    font: {
+      family: $primary-font;
+      size: $spacing-basic * 5;
+    }
+  }
+}
