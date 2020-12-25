@@ -1,6 +1,6 @@
 // about company
 .about{
-  padding: $spacing-large * .5 0 $spacing-basic * 2;
+  padding: 50px 0 20px;
   background-image: url(../image/sea-horse-bg.jpg);
   @extend %backgound-image;
   
@@ -15,37 +15,36 @@
     
     @include mediaquery-tablet-P {
       position: static;
+      //因父層不再是相對定位，兩個.about-box之間的dot將無法顯示出絕對定位的偽元素
     }
   }
 
   &-box + &-box{
-    margin-top: $spacing-large * 1.5;
+    margin-top: 150px;
 
     @include mediaquery-tablet-P {
-      margin-top: $spacing-large * 2;
+      margin-top: 200px;
     }
   }
 
   &-item{
-    padding: 0 $spacing-basic * 3;
     @extend %dot-row;
     @include mediaquery-tablet-P {
-      padding: 0 $spacing-large * .5;
-      box-sizing: border-box;
+      padding: 0 50px;
     }
 
     p + p{
-      margin-top: $spacing-basic * 2;
+      margin-top: 20px;
     }
   }
 
   &-item + &-item{
-    margin-top: $spacing-large * 1.5;
+    margin-top: 150px;
   }
 
   .back-to-top{
     .link{
-      margin: $spacing-large auto 0;
+      margin: 100px auto 0;
       @extend %link-light;
     }
   }

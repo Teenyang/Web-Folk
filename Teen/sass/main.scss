@@ -1,5 +1,9 @@
+*{
+  // outline: 1px solid red;
+}
+
 // abstracts
-@import 'abstracts/variables'; // color, spacing, font-family, breakpoint
+@import 'abstracts/variables'; // color, font-family, breakpoint
 @import 'abstracts/mixins'; // position-absolute, mediaquery
 @import 'abstracts/placeholders'; // backgound-image, image-fullsize
 

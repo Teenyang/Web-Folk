@@ -1,21 +1,20 @@
 // member introduction
 .member{
-  margin: $spacing-large auto $spacing-large * .5;
+  margin: 100px auto 50px;
   
   &-text{
-    padding: $spacing-basic;
     background-color: $primary-color;
     @extend %deco-triangle;
   }
   
   h5{
-    padding: $spacing-basic;
+    padding: 10px 20px;
     @extend %deco-title;
     letter-spacing: 2px;
   }
   
   h3{
-    padding: $spacing-large * .5;
+    padding: 50px 0;
     color: $primary-color;
     text-align: center;
   }    
@@ -30,7 +29,7 @@
   }
   
   &-intro{
-    margin-bottom: $spacing-large * .5;
+    margin: 10px 0 50px;
     text-align: center; 
   }
 

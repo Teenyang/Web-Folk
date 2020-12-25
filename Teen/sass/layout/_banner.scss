@@ -1,13 +1,13 @@
 // main-banner
 .banner{
-  padding: $spacing-large 0 $spacing-large * 2;
+  padding: 100px 0 200px;
   background-image: url(../image/banner.png);
   @extend %backgound-image;
   color: $light-color;
   text-align: center;
   
   &-title{
-    margin-bottom: $spacing-large;
+    margin-bottom: 100px;
 
     h3{
       letter-spacing: 10px;
@@ -18,7 +18,7 @@
     @extend %dot-column;
 
     h4{
-      padding: 0 $spacing-basic;
+      padding: 0 20px;
       
       @include mediaquery-mobile-L{
         margin: 0 auto;
@@ -34,7 +34,7 @@
     background-color: $primary-color;
 
     h5{
-      padding: $spacing-basic * 2 0;
+      padding: 20px 0;
       @extend %deco-title;
       letter-spacing: 5px;
     }

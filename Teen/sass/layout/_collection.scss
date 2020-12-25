@@ -1,9 +1,11 @@
 // collection pictures
-.collection{
-  &-item{
+.collection-item{
+  position: relative;
+  
+  figcaption{
     @extend %hover-picture;
   }
-
+  
   img{
     @extend %full-image;
   }

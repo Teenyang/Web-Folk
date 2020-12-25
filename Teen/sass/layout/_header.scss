@@ -1,7 +1,6 @@
 // --header, navbar
 header{
   margin: 0 auto;
-  padding: $spacing-basic * 2 0;
   background-color: $header-background-color;
   
   nav{
@@ -13,6 +12,6 @@ header{
   }
 
   a + a{
-    margin-left: $spacing-basic;
+    margin-left: 20px;
   }
 }

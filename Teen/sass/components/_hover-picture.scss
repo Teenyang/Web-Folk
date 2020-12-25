@@ -1,19 +1,19 @@
 // hover collection's picture
 %hover-picture{
-  position: relative;
+  @include position-absolute(0, 0);
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark-color;
+  font: {
+    family: $primary-font;
+    size: 50px;
+  }
+  opacity: 0;
+  transition: opacity 1s;
   
-  &:hover::before{
-    content: 'WEB folk';
-    @include position-absolute(0, 0);
-    background-color: $hover-picture-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $hover-font-color;
-  
-    font: {
-      family: $primary-font;
-      size: $spacing-basic * 5;
-    }
+  &:hover{
+    opacity: 0.6;
   }
 }

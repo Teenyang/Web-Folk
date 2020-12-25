@@ -1,10 +1,14 @@
 // link: contact, back-to-top
 %link{
-  padding: $spacing-basic;
+  padding: 10px;
   display: block;
   width: 200px;
   font-size: 20px;
   text-align: center;
+  &:hover{
+    color: $primary-color;
+    font-weight: bold;
+  }
 }
 
 %link-dark{

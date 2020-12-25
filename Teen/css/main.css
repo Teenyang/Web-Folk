@@ -4,12 +4,12 @@
   background-size: cover;
 }
 
-.member img, .collection img {
+.member img, .collection-item img {
   width: 100%;
   vertical-align: middle;
 }
 
-body, h1, h2, h3, h4, h5, p {
+body, h1, h2, h3, h4, h5, figure, p {
   margin: 0;
 }
 
@@ -47,6 +47,7 @@ h4 {
 
 h5 {
   font-size: 20px;
+  font-weight: 300;
 }
 
 header nav {
@@ -56,12 +57,13 @@ header nav {
 
 header a {
   display: inline-block;
-  padding: 10px;
+  padding: 20px 10px;
   color: #FF5E8A;
   font-size: 16px;
 }
 header a:hover {
   color: #fff;
+  font-weight: bold;
 }
 
 .member h5, .banner .collection-title h5 {
@@ -89,11 +91,7 @@ header a:hover {
   z-index: 2;
 }
 
-.collection-item {
-  position: relative;
-}
-.collection-item:hover::before {
-  content: "WEB folk";
+.collection-item figcaption {
   margin: 0 auto;
   position: absolute;
   left: 0;
@@ -101,13 +99,18 @@ header a:hover {
   top: 0;
   bottom: 0;
   z-index: 2;
-  background-color: rgba(255, 0, 72, 0.5);
+  background-color: #FF0048;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(54, 9, 54, 0.8);
+  color: #000;
   font-family: "Noto Serif", serif;
   font-size: 50px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.collection-item figcaption:hover {
+  opacity: 0.6;
 }
 
 .about .back-to-top .link, .member-contact .link {
@@ -116,6 +119,10 @@ header a:hover {
   width: 200px;
   font-size: 20px;
   text-align: center;
+}
+.about .back-to-top .link:hover, .member-contact .link:hover {
+  color: #FF0048;
+  font-weight: bold;
 }
 
 .member-contact .link {
@@ -201,11 +208,10 @@ header a:hover {
 
 header {
   margin: 0 auto;
-  padding: 20px 0;
   background-color: #360936;
 }
 header a + a {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .banner {
@@ -221,7 +227,7 @@ header a + a {
   letter-spacing: 10px;
 }
 .banner-text h4 {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 @media (min-width: 576px) {
   .banner-text h4 {
@@ -245,19 +251,21 @@ header a + a {
   letter-spacing: 5px;
 }
 
+.collection-item {
+  position: relative;
+}
 .member {
   margin: 100px auto 50px;
 }
 .member-text {
-  padding: 10px;
   background-color: #FF0048;
 }
 .member h5 {
-  padding: 10px;
+  padding: 10px 20px;
   letter-spacing: 2px;
 }
 .member h3 {
-  padding: 50px;
+  padding: 50px 0;
   color: #FF0048;
   text-align: center;
 }
@@ -266,7 +274,7 @@ header a + a {
   width: 65%;
 }
 .member-intro {
-  margin-bottom: 50px;
+  margin: 10px 0 50px;
   text-align: center;
 }
 .member h2 {
@@ -300,13 +308,9 @@ header a + a {
     margin-top: 200px;
   }
 }
-.about-item {
-  padding: 0 30px;
-}
 @media (min-width: 768px) {
   .about-item {
     padding: 0 50px;
-    box-sizing: border-box;
   }
 }
 .about-item p + p {
@@ -320,7 +324,7 @@ header a + a {
 }
 
 footer {
-  padding: 30px 0;
+  padding: 40px 0;
   background-color: #eee;
   text-align: center;
 }
@@ -332,6 +336,9 @@ footer {
 footer a {
   color: #FF0048;
   cursor: pointer;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
