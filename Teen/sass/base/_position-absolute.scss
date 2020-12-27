@@ -1,0 +1,10 @@
+// position absolute
+@mixin position-absolute($top, $bottom){
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $top;
+  bottom: $bottom;
+  z-index: 2;
+}

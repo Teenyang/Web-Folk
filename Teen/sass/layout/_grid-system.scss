@@ -1,9 +1,49 @@
+// break points: 直式螢幕 Portrait, 橫式螢幕 Landscape
+$mobile-P: 320px;
+$mobile-L: 576px;
+$tablet-P: 768px;
+$tablet-L: 992px;
+$desktop: 1200px;
+
+
+// mediaquery
+// mobile-Portrait: 320px
+@mixin mediaquery-mobile-P {
+  @media (min-width: $mobile-P) {
+    @content;
+  }
+}
+// mobile-Landscape: 576px
+@mixin mediaquery-mobile-L {
+  @media (min-width: $mobile-L) {
+    @content;
+  }
+}
+// tablet-Portrait :768px
+@mixin mediaquery-tablet-P {
+  @media (min-width: $tablet-P) {
+    @content;
+  }
+}
+// tablet-Landscape: 992px
+@mixin mediaquery-tablet-L {
+  @media (min-width: $tablet-L) {
+    @content;
+  }
+}
+// desktop: 1200px
+@mixin mediaquery-desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+
 // row
 .row{
   display: flex;
   flex-wrap: wrap;
 }
-
 // col-裝置-方向-佔比
 // 手機直向 320px：一列1欄，佔滿12/12
 .col-mobile-P-12{
@@ -12,7 +52,6 @@
     max-width: 100%;
   }
 }
-
 // 手機橫向 576px：一列2欄，各佔6/12
 .col-mobile-L-6{
   @include mediaquery-mobile-L {
@@ -20,7 +59,6 @@
     max-width: 50%;
   }
 }
-
 // 平板直向 768px：一列2欄，各佔6/12
 .col-tablet-P-6{
   @include mediaquery-tablet-P {
@@ -28,7 +66,6 @@
     max-width: 50%;
   }
 }
-
 // 平板橫向 992px：一列3欄，各佔4/12
 .col-tablet-L-4{
   @include mediaquery-tablet-L {
@@ -36,7 +73,6 @@
     max-width: 33.33%;
   }
 }
-
 // 桌機 1200px：一列4欄，各佔3/12
 .col-desktop-3{
   @include mediaquery-desktop {

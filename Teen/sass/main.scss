@@ -2,14 +2,12 @@
   // outline: 1px solid red;
 }
 
-// abstracts
-@import 'abstracts/variables'; // color, font-family, breakpoint
-@import 'abstracts/mixins'; // position-absolute, mediaquery
-@import 'abstracts/placeholders'; // backgound-image, image-fullsize
-
 // base 
 @import 'base/reset';
-@import 'base/font'; // font-style
+@import 'base/color';
+@import 'base/font';
+@import 'base/position-absolute';
+@import 'base/image'; // backgound-image, image-fullsize
 
 // component
 @import 'components/navbar';
@@ -19,7 +17,7 @@
 @import 'components/dot'; // dot-column, dot-row
 
 // layout
-@import 'layout/grid-system'; // row, col-裝置-方向-佔比
+@import 'layout/grid-system'; // breakpoint, mediaquery, row & col
 @import 'layout/header'; // header, navbar
 @import 'layout/banner';
 @import 'layout/collection';

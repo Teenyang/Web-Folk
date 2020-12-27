@@ -1,14 +1,3 @@
-.about, .banner {
-  background-attachment: fixed;
-  background-position: center top;
-  background-size: cover;
-}
-
-.member img, .collection-item img {
-  width: 100%;
-  vertical-align: middle;
-}
-
 body, h1, h2, h3, h4, h5, figure, p {
   margin: 0;
 }
@@ -48,6 +37,17 @@ h4 {
 h5 {
   font-size: 20px;
   font-weight: 300;
+}
+
+.about, .banner {
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+}
+
+.member img, .collection-item img {
+  width: 100%;
+  vertical-align: middle;
 }
 
 header nav {
