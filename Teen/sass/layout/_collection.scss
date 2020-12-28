@@ -2,7 +2,7 @@
 .collection-item{
   position: relative;
   
-  figcaption{
+  &::before{
     @extend %hover-picture;
   }
   

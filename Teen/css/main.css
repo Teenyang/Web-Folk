@@ -91,7 +91,8 @@ header a:hover {
   z-index: 2;
 }
 
-.collection-item figcaption {
+.collection-item::before {
+  content: "WEB folk";
   margin: 0 auto;
   position: absolute;
   left: 0;
@@ -99,6 +100,7 @@ header a:hover {
   top: 0;
   bottom: 0;
   z-index: 2;
+  margin: auto;
   background-color: #FF0048;
   display: flex;
   justify-content: center;
@@ -109,7 +111,7 @@ header a:hover {
   opacity: 0;
   transition: opacity 1s;
 }
-.collection-item figcaption:hover {
+.collection-item:hover::before {
   opacity: 0.6;
 }
 
