@@ -1,0 +1,19 @@
+{
+  "name": "teen",
+  "version": "1.0.0",
+  "description": "template t5 layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch sass/main.scss:css/main.css"
+  },
+  "keywords": [
+    "t5",
+    "sass"
+  ],
+  "author": "Teen",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.30.0"
+  }
+}
