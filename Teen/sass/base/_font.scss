@@ -1,45 +1,46 @@
 // font-family
-$title-font: 'Inria Serif', serif;
-$subtitle-font: 'Playball', cursive;
-$primary-font: 'Noto Serif', serif;
+$primary-font: 'Inria Serif', serif;
+$secondary-font: 'Playball', cursive;
+$basic-font: 'Noto Serif', serif;
 
 // font-style
-%font-style {
+@mixin font-style($size, $weight){
   font: {
-    family: $primary-font;
-    weight: 300;
+    size: $size;
+    weight: $weight;
   }
+  @content;
 }
 
 h1{
-  color: $light-color;
-  font: {
-    family: $title-font;
-    size: 60px;
-    weight: 700;
+  @include font-style(60px, 700){
+    color: $light-color;
+    font-family: $primary-font;
   }
   span{
-    font-family: $subtitle-font;
+    font-family: $secondary-font;
   }
 }
 
 h2{
-  @extend %font-style;
-  font-size: 40px;
-  letter-spacing: 2px;
+  @include font-style(40px, 300){
+    letter-spacing: 2px;
+    font-family: $basic-font;
+  }
 }
 
 h3{
-  @extend %font-style;
-  font-size: 25px;
+  @include font-style(25px, 300){
+    font-family: $basic-font;
+  }
 }
 
 h4{
-  @extend %font-style;
-  font-size: 20px;
+  @include font-style(20px, 300){
+    font-family: $basic-font;
+  }
 }
 
 h5{
-  font-size: 20px;
-  font-weight: 300;
+  @include font-style(20px, 300);
 }

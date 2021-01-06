@@ -10,18 +10,16 @@
 
 %dot-column{
   position: relative;
-    
-    &::after{
-      @extend %dot;
-      bottom: -50px;
-      box-shadow: 0 30px, 0 60px;
-    }
+  &::after{
+    @extend %dot;
+    bottom: -50px;
+    box-shadow: 0 30px, 0 60px;
+  } 
 }
 
 %dot-row{
   position: relative;
-
-  &:last-child::after{
+  &:last-child:after{
     @extend %dot;
     top: -75px;
     box-shadow: 30px 0, -30px 0;

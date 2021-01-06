@@ -2,14 +2,13 @@
 %hover-picture{
   content: 'WEB folk';
   @include position-absolute(0, 0);
-  margin: auto;
-  background-color: $primary-color;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $primary-color;
   color: $dark-color;
   font: {
-    family: $primary-font;
+    family: $basic-font;
     size: 50px;
   }
   opacity: 0;

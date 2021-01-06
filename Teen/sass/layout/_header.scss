@@ -1,14 +1,14 @@
 // --header, navbar
 header{
   margin: 0 auto;
-  background-color: $header-background-color;
+  background-color: $secondary-color;
   
   nav{
-    @extend %nav;
+    @extend %navbar;
     
   }
   a{
-    @extend %nav-item;
+    @extend %navbar-item;
   }
 
   a + a{

@@ -6,7 +6,7 @@
   color: $light-color;
   text-align: center;
   
-  &-title{
+  .banner-title{
     margin-bottom: 100px;
 
     h3{
@@ -14,7 +14,7 @@
     }
   }
   
-  &-text{
+  .banner-text{
     @extend %dot-column;
 
     h4{
@@ -35,7 +35,7 @@
 
     h5{
       padding: 20px 0;
-      @extend %deco-title;
+      @extend %deco-font;
       letter-spacing: 5px;
     }
   }

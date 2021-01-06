@@ -4,12 +4,12 @@
   background-image: url(../image/sea-horse-bg.jpg);
   @extend %backgound-image;
   
-  &-group{
+  .about-group{
     margin: 0 auto;
-    width: 85%;  
+    width: 85%;
   }
   
-  &-box{
+  .about-box{
     @extend %dot-row;
     color: $light-color;
     
@@ -19,33 +19,24 @@
     }
   }
 
-  &-box + &-box{
+  .about-box + .about-box,
+  .about-item + .about-item{
     margin-top: 150px;
-
-    @include mediaquery-tablet-P {
-      margin-top: 200px;
-    }
   }
 
-  &-item{
+  .about-item{
+    padding: 0 50px;
     @extend %dot-row;
-    @include mediaquery-tablet-P {
-      padding: 0 50px;
-    }
 
     p + p{
       margin-top: 20px;
     }
   }
 
-  &-item + &-item{
-    margin-top: 150px;
-  }
-
   .back-to-top{
     .link{
       margin: 100px auto 0;
-      @extend %link-light;
+      @extend %link-light-background;
     }
   }
 }

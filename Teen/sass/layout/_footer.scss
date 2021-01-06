@@ -1,7 +1,7 @@
 //footer copyright
 footer{
   padding: 40px 0;
-  background-color: $footer-background-color;
+  background-color: #eee;
   text-align: center;
 
   p{
@@ -12,8 +12,6 @@ footer{
 
   a{
     color: $primary-color;
-    cursor: pointer;
-
     &:hover{
       text-decoration: underline;
     }

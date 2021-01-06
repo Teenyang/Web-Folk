@@ -1,46 +1,41 @@
 // member introduction
 .member{
   margin: 100px auto 50px;
-  
-  &-text{
-    background-color: $primary-color;
-    @extend %deco-triangle;
-  }
+  text-align: center;
   
   h5{
     padding: 10px 20px;
-    @extend %deco-title;
+    @extend %deco-font;
+    @extend %deco-triangle;
     letter-spacing: 2px;
   }
   
   h3{
     padding: 50px 0;
     color: $primary-color;
-    text-align: center;
   }    
   
-  &-group{
+  .member-group{
     margin: 0 auto;
     width: 65%;
+
+    img{
+      @extend %full-image;
+    }
+    
+    .member-intro{
+      margin: 10px 0 50px;
+      
+      h2{
+        color: $primary-color;
+      }
+    }
   }
 
-  img{
-    @extend %full-image;
-  }
-  
-  &-intro{
-    margin: 10px 0 50px;
-    text-align: center; 
-  }
-
-  h2{
-    color: $primary-color;
-  }
-
-  &-contact{
+  .member-contact{
     .link{
       margin: 0 auto;
-      @extend %link-dark;
+      @extend %link-dark-background;
     }
   }
 }

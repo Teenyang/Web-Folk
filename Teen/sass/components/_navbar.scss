@@ -1,13 +1,13 @@
 // navbar
-%nav{
+%navbar{
   font-size: 0;
   text-align: center;
 }
 
-%nav-item{
-  display: inline-block;
+%navbar-item{
   padding: 20px 10px;
-  color: $nav-item-color;
+  display: inline-block;
+  color: $thirdly-color;
   font-size: 16px;
 
   &:hover{

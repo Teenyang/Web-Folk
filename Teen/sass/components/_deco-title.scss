@@ -1,5 +1,5 @@
 // deco-title
-%deco-title{
+%deco-font{
   background-color: $primary-color;
   color: $light-color;
   text-align: center;
@@ -16,6 +16,6 @@
     border-top: 20px solid $primary-color;
     border-left: 20px solid $none-color;
     border-right: 20px solid $none-color;
-    @include position-absolute(auto, -20px);
+    @include position-absolute(auto, -19px);
   }
 }

@@ -11,13 +11,13 @@
   }
 }
 
-%link-dark{
+%link-dark-background{
   @extend %link;
   background-color: $dark-color;
   color: $light-color;
 }
 
-%link-light{
+%link-light-background{
   @extend %link;
   background-color: $light-color;
   color: $dark-color;

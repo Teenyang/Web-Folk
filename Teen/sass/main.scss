@@ -2,8 +2,11 @@
 @import 'base/reset';
 @import 'base/color';
 @import 'base/font';
-@import 'base/position-absolute';
 @import 'base/image'; // backgound-image, image-fullsize
+
+// abstract
+@import 'abstract/grid-system'; // breakpoint, mediaquery, row & col
+@import 'abstract/position';
 
 // component
 @import 'components/navbar';
@@ -13,7 +16,6 @@
 @import 'components/dot'; // dot-column, dot-row
 
 // layout
-@import 'layout/grid-system'; // breakpoint, mediaquery, row & col
 @import 'layout/header'; // header, navbar
 @import 'layout/banner';
 @import 'layout/collection';

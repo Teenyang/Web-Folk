@@ -6,16 +6,11 @@ a {
   text-decoration: none;
 }
 
-h4, h3, h2 {
-  font-family: "Noto Serif", serif;
-  font-weight: 300;
-}
-
 h1 {
-  color: #fff;
-  font-family: "Inria Serif", serif;
   font-size: 60px;
   font-weight: 700;
+  color: #fff;
+  font-family: "Inria Serif", serif;
 }
 h1 span {
   font-family: "Playball", cursive;
@@ -23,15 +18,21 @@ h1 span {
 
 h2 {
   font-size: 40px;
+  font-weight: 300;
   letter-spacing: 2px;
+  font-family: "Noto Serif", serif;
 }
 
 h3 {
   font-size: 25px;
+  font-weight: 300;
+  font-family: "Noto Serif", serif;
 }
 
 h4 {
   font-size: 20px;
+  font-weight: 300;
+  font-family: "Noto Serif", serif;
 }
 
 h5 {
@@ -45,127 +46,9 @@ h5 {
   background-size: cover;
 }
 
-.member img, .collection-item img {
+.member .member-group img, .collection-item img {
   width: 100%;
   vertical-align: middle;
-}
-
-header nav {
-  font-size: 0;
-  text-align: center;
-}
-
-header a {
-  display: inline-block;
-  padding: 20px 10px;
-  color: #FF5E8A;
-  font-size: 16px;
-}
-header a:hover {
-  color: #fff;
-  font-weight: bold;
-}
-
-.member h5, .banner .collection-title h5 {
-  background-color: #FF0048;
-  color: #fff;
-  text-align: center;
-}
-
-.member-text, .banner {
-  position: relative;
-}
-.member-text::after, .banner::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid #FF0048;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: auto;
-  bottom: -20px;
-  z-index: 2;
-}
-
-.collection-item::before {
-  content: "WEB folk";
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
-  margin: auto;
-  background-color: #FF0048;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  font-family: "Noto Serif", serif;
-  font-size: 50px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-.collection-item:hover::before {
-  opacity: 0.6;
-}
-
-.about .back-to-top .link, .member-contact .link {
-  padding: 10px;
-  display: block;
-  width: 200px;
-  font-size: 20px;
-  text-align: center;
-}
-.about .back-to-top .link:hover, .member-contact .link:hover {
-  color: #FF0048;
-  font-weight: bold;
-}
-
-.member-contact .link {
-  background-color: #000;
-  color: #fff;
-}
-
-.about .back-to-top .link {
-  background-color: #fff;
-  color: #000;
-}
-
-.about-item:last-child::after, .about-box:last-child::after, .banner-text::after {
-  content: "";
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: auto;
-  bottom: auto;
-  z-index: 2;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.banner-text {
-  position: relative;
-}
-.banner-text::after {
-  bottom: -50px;
-  box-shadow: 0 30px, 0 60px;
-}
-
-.about-item, .about-box {
-  position: relative;
-}
-.about-item:last-child::after, .about-box:last-child::after {
-  top: -75px;
-  box-shadow: 30px 0, -30px 0;
 }
 
 .row {
@@ -208,6 +91,123 @@ header a:hover {
   }
 }
 
+header nav {
+  font-size: 0;
+  text-align: center;
+}
+
+header a {
+  padding: 20px 10px;
+  display: inline-block;
+  color: #FF5E8A;
+  font-size: 16px;
+}
+header a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.member h5, .banner .collection-title h5 {
+  background-color: #FF0048;
+  color: #fff;
+  text-align: center;
+}
+
+.member h5, .banner {
+  position: relative;
+}
+.member h5::after, .banner::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #FF0048;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: -19px;
+  z-index: 2;
+}
+
+.collection-item::before {
+  content: "WEB folk";
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF0048;
+  color: #000;
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.collection-item:hover::before {
+  opacity: 0.6;
+}
+
+.about .back-to-top .link, .member .member-contact .link {
+  padding: 10px;
+  display: block;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+.about .back-to-top .link:hover, .member .member-contact .link:hover {
+  color: #FF0048;
+  font-weight: bold;
+}
+
+.member .member-contact .link {
+  background-color: #000;
+  color: #fff;
+}
+
+.about .back-to-top .link {
+  background-color: #fff;
+  color: #000;
+}
+
+.about .about-item:last-child:after, .about .about-box:last-child:after, .banner .banner-text::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: auto;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.banner .banner-text {
+  position: relative;
+}
+.banner .banner-text::after {
+  bottom: -50px;
+  box-shadow: 0 30px, 0 60px;
+}
+
+.about .about-item, .about .about-box {
+  position: relative;
+}
+.about .about-item:last-child:after, .about .about-box:last-child:after {
+  top: -75px;
+  box-shadow: 30px 0, -30px 0;
+}
+
 header {
   margin: 0 auto;
   background-color: #360936;
@@ -222,24 +222,24 @@ header a + a {
   color: #fff;
   text-align: center;
 }
-.banner-title {
+.banner .banner-title {
   margin-bottom: 100px;
 }
-.banner-title h3 {
+.banner .banner-title h3 {
   letter-spacing: 10px;
 }
-.banner-text h4 {
+.banner .banner-text h4 {
   padding: 0 20px;
 }
 @media (min-width: 576px) {
-  .banner-text h4 {
+  .banner .banner-text h4 {
     margin: 0 auto;
     width: 400px;
   }
 }
 .banner .collection-title {
   width: 320px;
-  margin: 0 auto;
+  margin: auto;
   position: absolute;
   left: 0;
   right: 0;
@@ -258,9 +258,7 @@ header a + a {
 }
 .member {
   margin: 100px auto 50px;
-}
-.member-text {
-  background-color: #FF0048;
+  text-align: center;
 }
 .member h5 {
   padding: 10px 20px;
@@ -269,20 +267,18 @@ header a + a {
 .member h3 {
   padding: 50px 0;
   color: #FF0048;
-  text-align: center;
 }
-.member-group {
+.member .member-group {
   margin: 0 auto;
   width: 65%;
 }
-.member-intro {
+.member .member-group .member-intro {
   margin: 10px 0 50px;
-  text-align: center;
 }
-.member h2 {
+.member .member-group .member-intro h2 {
   color: #FF0048;
 }
-.member-contact .link {
+.member .member-contact .link {
   margin: 0 auto;
 }
 
@@ -290,36 +286,27 @@ header a + a {
   padding: 50px 0 20px;
   background-image: url(../image/sea-horse-bg.jpg);
 }
-.about-group {
+.about .about-group {
   margin: 0 auto;
   width: 85%;
 }
-.about-box {
+.about .about-box {
   color: #fff;
 }
 @media (min-width: 768px) {
-  .about-box {
+  .about .about-box {
     position: static;
   }
 }
-.about-box + .about-box {
+.about .about-box + .about-box,
+.about .about-item + .about-item {
   margin-top: 150px;
 }
-@media (min-width: 768px) {
-  .about-box + .about-box {
-    margin-top: 200px;
-  }
+.about .about-item {
+  padding: 0 50px;
 }
-@media (min-width: 768px) {
-  .about-item {
-    padding: 0 50px;
-  }
-}
-.about-item p + p {
+.about .about-item p + p {
   margin-top: 20px;
-}
-.about-item + .about-item {
-  margin-top: 150px;
 }
 .about .back-to-top .link {
   margin: 100px auto 0;
@@ -337,7 +324,6 @@ footer {
 }
 footer a {
   color: #FF0048;
-  cursor: pointer;
 }
 footer a:hover {
   text-decoration: underline;
